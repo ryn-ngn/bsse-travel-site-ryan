@@ -1,0 +1,13 @@
+@import "abstracts";
+
+@include set-destination-background(hawaii, $image-link-hawaii);
+@include set-destination-background(greece, $image-link-greece);
+@include set-destination-background(iceland, $image-link-iceland);
+
+.destination-packages {
+  &__content {
+    @include flex-on-spacing(row, center);
+    text-align: center;
+  }
+  @include set-package-day;
+}

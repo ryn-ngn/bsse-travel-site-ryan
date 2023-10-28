@@ -1,4 +1,99 @@
 body {
   max-width: 1280px;
   margin: 0 auto;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.nav-bar {
+  background-color: #ffffff;
+  position: sticky;
+  top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 0 2rem;
+}
+.nav-bar__nav-elements {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.nav-bar__nav-elements--item {
+  padding-left: 1rem;
+}
+
+.footer {
+  background-color: #fefaf5;
+  padding: 0 10%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.footer h3 {
+  margin-top: 0;
+}
+.footer .hours {
+  position: relative;
+  top: 0;
+}
+.footer .hours__details {
+  display: flex;
+}
+.footer .hours__details--group:nth-child(2) {
+  padding: 0 1.5rem;
+}
+.footer .social__icon-ctn a:nth-child(2) img {
+  margin: 0 1rem;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 0 2rem;
+}
+.hero__image img {
+  height: 40vh;
+}
+
+.destination-packages.hawaii {
+  height: 500px;
+  background-image: url("../assets/images/hawaii.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.destination-packages.greece {
+  height: 500px;
+  background-image: url("../assets/images/greece.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.destination-packages.iceland {
+  height: 500px;
+  background-image: url("../assets/images/iceland.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.destination-packages__content {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  text-align: center;
+}
+.destination-packages .destination-packages__content--day {
+  padding: 1rem;
+  width: 20%;
+  height: 30vh;
+  background-color: white;
+  margin: 0 1rem;
+  border-radius: 5px;
+}
+.destination-packages .destination-packages__content--day--heading {
+  border-bottom: solid 2px black;
+}
+.destination-packages .destination-packages__content--day--activity {
+  background-color: #fefaf5;
 }

@@ -1,0 +1,15 @@
+@import "abstracts";
+$color-hero-backgound: #fefaf5;
+$color-hero-slogan: #335576;
+$color-hero-button: #db7a4e;
+$color-recommendations-title: #335576;
+
+.hero {
+  @include flex-on-spacing(row, space-between);
+  @include set-standard-padding;
+  &__image {
+    img {
+      height: 40vh;
+    }
+  }
+}

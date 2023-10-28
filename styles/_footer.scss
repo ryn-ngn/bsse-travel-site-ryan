@@ -1,0 +1,29 @@
+@import "abstracts";
+$color-footer-background: #fefaf5;
+$color-footer-title: #335576;
+$color-footer-subtitle: #db7a4e;
+
+.footer {
+  background-color: $color-footer-background;
+  padding: 0 10%;
+  @include flex-on-spacing(row, space-between);
+  h3 {
+    margin-top: 0;
+  }
+  .hours {
+    position: relative;
+    top: 0;
+    &__details {
+      display: flex;
+      &--group:nth-child(2) {
+        padding: 0 1.5rem;
+      }
+    }
+  }
+
+  .social {
+    &__icon-ctn a:nth-child(2) img {
+      margin: 0 1rem;
+    }
+  }
+}

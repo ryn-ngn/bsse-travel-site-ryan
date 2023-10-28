@@ -1,0 +1,18 @@
+@use "abstracts" as *;
+@import "abstracts";
+$color-nav-bar: #ffffff;
+$color-word-mark: #335576;
+
+.nav-bar {
+  background-color: $color-nav-bar;
+  position: sticky;
+  top: 1rem;
+  @include flex-on-spacing(row, space-between);
+  @include set-standard-padding;
+  &__nav-elements {
+    @include flex-on-spacing(column, center);
+    &--item {
+      padding-left: 1rem;
+    }
+  }
+}

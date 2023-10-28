@@ -1,0 +1,40 @@
+$image-link-hawaii: "../assets/images/hawaii.jpg";
+$image-link-greece: "../assets/images/greece.jpg";
+$image-link-iceland: "../assets/images/iceland.jpg";
+$color-activity: #fefaf5;
+
+@mixin flex-on-spacing($flex-direction, $spacing-option) {
+  display: flex;
+  justify-content: $spacing-option;
+  flex-direction: $flex-direction;
+}
+
+@mixin set-standard-padding {
+  padding: 0 2rem;
+}
+
+@mixin set-destination-background($destination-name, $background-url) {
+  .destination-packages.#{$destination-name} {
+    height: 500px;
+    background-image: url($background-url);
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@mixin set-package-day {
+  .destination-packages__content--day {
+    padding: 1rem;
+    width: 20%;
+    height: 30vh;
+    background-color: white;
+    margin: 0 1rem;
+    border-radius: 5px;
+    &--heading {
+      border-bottom: solid 2px black;
+    }
+    &--activity {
+      background-color: $color-activity;
+    }
+  }
+}

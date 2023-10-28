@@ -9,4 +9,5 @@
     @include set-destination-card(greece, $image-link-greece);
     @include set-destination-card(iceland, $image-link-iceland);
   }
+  margin: 1rem 0 4rem 0;
 }

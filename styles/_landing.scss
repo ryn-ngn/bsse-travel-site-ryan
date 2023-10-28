@@ -1,7 +1,5 @@
 @import "abstracts";
 $color-hero-background: #fefaf5;
-$color-hero-slogan: #335576;
-$color-hero-button: #db7a4e;
 
 .hero {
   background-color: $color-hero-background;
@@ -22,7 +20,7 @@ $color-hero-button: #db7a4e;
 
   button {
     border-radius: 20px;
-    background-color: $color-hero-button;
+    background-color: $color-travel-orange;
     color: white;
     padding: 0.5rem 2.5rem;
     border: none;

@@ -7,12 +7,23 @@ $color-word-mark: #335576;
   background-color: $color-nav-bar;
   position: sticky;
   top: 0;
+  &__heading,
+  a {
+    text-decoration: none;
+  }
   @include flex-on-spacing(row, space-between);
   @include set-standard-padding;
   &__nav-elements {
     @include flex-on-spacing(column, center);
     &--item {
-      padding-left: 1rem;
+      margin-left: 1rem;
+      text-decoration: none;
+      &--active,
+      a {
+        margin-left: 1rem;
+        text-decoration: none;
+        border-bottom: solid 2px $color-travel-orange;
+      }
     }
   }
 }

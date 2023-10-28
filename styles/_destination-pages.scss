@@ -5,9 +5,22 @@
 @include set-destination-background(iceland, $image-link-iceland);
 
 .destination-packages {
+  height: 70vh;
+  color: black;
+  &__heading {
+    font-size: 3.5rem;
+    color: white;
+    @include set-standard-padding(4rem);
+    margin: 0;
+  }
   &__content {
     @include flex-on-spacing(row, center);
     text-align: center;
+    font-weight: 450;
+    p {
+      padding: 0.8rem;
+    }
   }
   @include set-package-day;
+  margin: 1rem 0 3rem 0;
 }

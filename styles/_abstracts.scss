@@ -3,6 +3,7 @@ $image-link-greece: "../assets/images/greece.jpg";
 $image-link-iceland: "../assets/images/iceland.jpg";
 $color-activity: #fefaf5;
 $color-site-wide-blue: #335576;
+$color-travel-orange: #db7a4e;
 
 @mixin flex-on-spacing($flex-direction, $spacing-option) {
   display: flex;
@@ -16,7 +17,6 @@ $color-site-wide-blue: #335576;
 
 @mixin set-destination-background($destination-name, $background-url) {
   .destination-packages.#{$destination-name} {
-    height: 500px;
     background-image: url($background-url);
     background-size: cover;
     background-position: center;
@@ -27,7 +27,7 @@ $color-site-wide-blue: #335576;
   .destination-packages__content--day {
     padding: 1rem;
     width: 20%;
-    height: 30vh;
+    height: fit-content;
     background-color: white;
     margin: 0 1rem;
     border-radius: 5px;

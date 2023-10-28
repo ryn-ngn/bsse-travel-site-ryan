@@ -8,7 +8,7 @@ body {
 .nav-bar {
   background-color: #ffffff;
   position: sticky;
-  top: 1rem;
+  top: 0;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -50,6 +50,75 @@ body {
 .recommendations {
   padding: 0 5rem;
 }
+.recommendations__destinations {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.recommendations__destinations .recommendations__destinations--hawaii {
+  margin: 0 1rem;
+  border-radius: 5px;
+  display: flex;
+  flex-flow: column wrap;
+  align-content: flex-end;
+  justify-content: end;
+  position: relative;
+}
+.recommendations__destinations .recommendations__destinations--hawaii p {
+  font-size: large;
+  font-weight: bold;
+  color: white;
+  margin: 0;
+  position: absolute;
+  bottom: 1.5rem;
+  right: 2rem;
+}
+.recommendations__destinations .recommendations__destinations--hawaii img {
+  height: 40vh;
+}
+.recommendations__destinations .recommendations__destinations--greece {
+  margin: 0 1rem;
+  border-radius: 5px;
+  display: flex;
+  flex-flow: column wrap;
+  align-content: flex-end;
+  justify-content: end;
+  position: relative;
+}
+.recommendations__destinations .recommendations__destinations--greece p {
+  font-size: large;
+  font-weight: bold;
+  color: white;
+  margin: 0;
+  position: absolute;
+  bottom: 1.5rem;
+  right: 2rem;
+}
+.recommendations__destinations .recommendations__destinations--greece img {
+  height: 40vh;
+}
+.recommendations__destinations .recommendations__destinations--iceland {
+  margin: 0 1rem;
+  border-radius: 5px;
+  display: flex;
+  flex-flow: column wrap;
+  align-content: flex-end;
+  justify-content: end;
+  position: relative;
+}
+.recommendations__destinations .recommendations__destinations--iceland p {
+  font-size: large;
+  font-weight: bold;
+  color: white;
+  margin: 0;
+  position: absolute;
+  bottom: 1.5rem;
+  right: 2rem;
+}
+.recommendations__destinations .recommendations__destinations--iceland img {
+  height: 40vh;
+}
+
 .hero {
   background-color: #fefaf5;
   display: flex;

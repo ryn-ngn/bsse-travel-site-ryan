@@ -4,5 +4,9 @@
   @include set-standard-padding;
 
   &__destinations {
+    @include flex-on-spacing(row, center);
+    @include set-destination-card(hawaii, $image-link-hawaii);
+    @include set-destination-card(greece, $image-link-greece);
+    @include set-destination-card(iceland, $image-link-iceland);
   }
 }

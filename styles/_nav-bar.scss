@@ -6,7 +6,7 @@ $color-word-mark: #335576;
 .nav-bar {
   background-color: $color-nav-bar;
   position: sticky;
-  top: 1rem;
+  top: 0;
   @include flex-on-spacing(row, space-between);
   @include set-standard-padding;
   &__nav-elements {

@@ -1,5 +1,8 @@
+@use "abstracts" as *;
+
 body {
   max-width: 1280px;
   margin: 0 auto;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: $color-site-wide-blue;
 }

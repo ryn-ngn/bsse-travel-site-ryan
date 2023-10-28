@@ -1,0 +1,8 @@
+@import "abstracts";
+
+.recommendations {
+  @include set-standard-padding;
+
+  &__destinations {
+  }
+}

@@ -2,6 +2,7 @@ $image-link-hawaii: "../assets/images/hawaii.jpg";
 $image-link-greece: "../assets/images/greece.jpg";
 $image-link-iceland: "../assets/images/iceland.jpg";
 $color-activity: #fefaf5;
+$color-site-wide-blue: #335576;
 
 @mixin flex-on-spacing($flex-direction, $spacing-option) {
   display: flex;
@@ -9,8 +10,8 @@ $color-activity: #fefaf5;
   flex-direction: $flex-direction;
 }
 
-@mixin set-standard-padding {
-  padding: 0 2rem;
+@mixin set-standard-padding($top-down: 0, $left-right: 5rem) {
+  padding: $top-down $left-right;
 }
 
 @mixin set-destination-background($destination-name, $background-url) {

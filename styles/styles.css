@@ -2,6 +2,7 @@ body {
   max-width: 1280px;
   margin: 0 auto;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #335576;
 }
 
 .nav-bar {
@@ -11,7 +12,7 @@ body {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-  padding: 0 2rem;
+  padding: 0 5rem;
 }
 .nav-bar__nav-elements {
   display: flex;
@@ -46,14 +47,33 @@ body {
   margin: 0 1rem;
 }
 
+.recommendations {
+  padding: 0 5rem;
+}
 .hero {
+  background-color: #fefaf5;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-  padding: 0 2rem;
+  padding: 4rem 5rem;
 }
-.hero__image img {
+.hero__text {
+  width: 45%;
+}
+.hero__text .recommendations__heading,
+.hero__text h1 {
+  font-size: 2rem;
+}
+.hero__image,
+.hero img {
   height: 40vh;
+}
+.hero button {
+  border-radius: 20px;
+  background-color: #db7a4e;
+  color: white;
+  padding: 0.5rem 2.5rem;
+  border: none;
 }
 
 .destination-packages.hawaii {

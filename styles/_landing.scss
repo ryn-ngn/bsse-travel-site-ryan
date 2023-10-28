@@ -1,15 +1,30 @@
 @import "abstracts";
-$color-hero-backgound: #fefaf5;
+$color-hero-background: #fefaf5;
 $color-hero-slogan: #335576;
 $color-hero-button: #db7a4e;
-$color-recommendations-title: #335576;
 
 .hero {
+  background-color: $color-hero-background;
   @include flex-on-spacing(row, space-between);
-  @include set-standard-padding;
-  &__image {
-    img {
-      height: 40vh;
+  // set-standard-padding has default left-right value of 5 rem
+  @include set-standard-padding(4rem);
+  &__text {
+    width: 45%;
+    .recommendations__heading,
+    h1 {
+      font-size: 2rem;
     }
+  }
+  &__image,
+  img {
+    height: 40vh;
+  }
+
+  button {
+    border-radius: 20px;
+    background-color: $color-hero-button;
+    color: white;
+    padding: 0.5rem 2.5rem;
+    border: none;
   }
 }

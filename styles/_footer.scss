@@ -1,17 +1,17 @@
-@use "abstracts" as abstracts;
+@use "abstracts" as *;
 $color-footer-background: #fefaf5;
 
 .footer {
   background-color: $color-footer-background;
   padding: 3rem 10% 2rem 10%;
-  @include abstracts.flex-on-spacing(row, center);
+  @include flex-on-spacing(row, center);
 
   &__item {
     margin: 0 2rem;
   }
   h3 {
     margin-top: 0;
-    color: abstracts.$color-h3-and-button-bg;
+    color: $color-h3-and-button-bg;
   }
   .hours {
     position: relative;
@@ -27,6 +27,7 @@ $color-footer-background: #fefaf5;
   .social {
     &__icon-ctn img {
       height: 30px;
+      @include add-scale-animation;
     }
     &__icon-ctn a:nth-child(2) img {
       margin: 0 1rem;

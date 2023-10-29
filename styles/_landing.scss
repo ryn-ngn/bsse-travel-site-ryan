@@ -1,4 +1,5 @@
 @use "abstracts" as *;
+@use "animation" as *;
 $color-hero-background: #fefaf5;
 
 .hero {
@@ -16,6 +17,9 @@ $color-hero-background: #fefaf5;
   &__image,
   img {
     height: 40vh;
+    &:hover {
+      animation: tilt-shaking 1.5s linear infinite;
+    }
   }
 
   button {

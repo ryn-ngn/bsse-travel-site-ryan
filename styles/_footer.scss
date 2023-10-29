@@ -1,14 +1,17 @@
-@import "abstracts";
+@use "abstracts" as abstracts;
 $color-footer-background: #fefaf5;
-$color-footer-title: #335576;
-$color-footer-subtitle: #db7a4e;
 
 .footer {
   background-color: $color-footer-background;
-  padding: 0 10%;
-  @include flex-on-spacing(row, space-between);
+  padding: 3rem 10% 2rem 10%;
+  @include abstracts.flex-on-spacing(row, center);
+
+  &__item {
+    margin: 0 2rem;
+  }
   h3 {
     margin-top: 0;
+    color: abstracts.$color-h3-and-button-bg;
   }
   .hours {
     position: relative;
@@ -22,6 +25,9 @@ $color-footer-subtitle: #db7a4e;
   }
 
   .social {
+    &__icon-ctn img {
+      height: 30px;
+    }
     &__icon-ctn a:nth-child(2) img {
       margin: 0 1rem;
     }

@@ -2,8 +2,8 @@ $image-link-hawaii: "../assets/images/hawaii.jpg";
 $image-link-greece: "../assets/images/greece.jpg";
 $image-link-iceland: "../assets/images/iceland.jpg";
 $color-activity: #fefaf5;
-$color-site-wide-blue: #335576;
-$color-travel-orange: #db7a4e;
+$color-site-wide-text: #335576;
+$color-h3-and-button-bg: #db7a4e;
 
 @mixin flex-on-spacing($flex-direction, $spacing-option) {
   display: flex;
@@ -43,12 +43,13 @@ $color-travel-orange: #db7a4e;
 @mixin set-destination-card($destination, $background-url) {
   .recommendations__destinations--#{$destination} {
     margin: 0 1rem;
-    border-radius: 5px;
+    // border-radius: 5px;
     display: flex;
     flex-flow: column wrap;
     align-content: flex-end;
     justify-content: end;
     position: relative;
+
     p {
       font-size: large;
       font-weight: bold;
@@ -59,7 +60,17 @@ $color-travel-orange: #db7a4e;
       right: 2rem;
     }
     img {
+      border-radius: 5px;
       height: 40vh;
+      border: solid 1px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 4px 4px 0px rgb(0, 0, 0, 0.2);
     }
+  }
+}
+
+@mixin add-scale-animation {
+  transition: 0.6s;
+  &:hover {
+    transform: scale(1.05);
   }
 }

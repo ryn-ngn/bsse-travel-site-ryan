@@ -1,4 +1,4 @@
-@import "abstracts";
+@use "abstracts" as *;
 $color-hero-background: #fefaf5;
 
 .hero {
@@ -20,7 +20,7 @@ $color-hero-background: #fefaf5;
 
   button {
     border-radius: 20px;
-    background-color: $color-travel-orange;
+    background-color: $color-h3-and-button-bg;
     color: white;
     padding: 0.5rem 2.5rem;
     border: none;

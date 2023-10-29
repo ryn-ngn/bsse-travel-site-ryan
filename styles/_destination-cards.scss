@@ -1,4 +1,4 @@
-@import "abstracts";
+@use "abstracts" as *;
 
 .recommendations {
   @include set-standard-padding;
@@ -8,6 +8,18 @@
     @include set-destination-card(hawaii, $image-link-hawaii);
     @include set-destination-card(greece, $image-link-greece);
     @include set-destination-card(iceland, $image-link-iceland);
+
+    &--hawaii {
+      @include add-scale-animation;
+    }
+
+    &--greece {
+      @include add-scale-animation;
+    }
+
+    &--iceland {
+      @include add-scale-animation;
+    }
   }
   margin: 1rem 0 4rem 0;
 }

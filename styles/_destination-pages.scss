@@ -1,4 +1,4 @@
-@import "abstracts";
+@use "abstracts" as *;
 
 @include set-destination-background(hawaii, $image-link-hawaii);
 @include set-destination-background(greece, $image-link-greece);
@@ -10,7 +10,7 @@
   &__heading {
     font-size: 3.5rem;
     color: white;
-    @include set-standard-padding(4rem);
+    @include set-standard-padding(5vh);
     margin: 0;
   }
   &__content {
@@ -22,5 +22,4 @@
     }
   }
   @include set-package-day;
-  margin: 1rem 0 3rem 0;
 }

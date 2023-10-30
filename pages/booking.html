@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Travel Site</title>
-    <link rel="stylesheet" type="text/css" href="./styles/styles.css" />
+    <title>Booking Form</title>
+    <link rel="stylesheet" type="text/css" href="../styles/styles.css" />
   </head>
   <body>
     <header class="body-header">
@@ -16,7 +16,7 @@
         <ul class="nav-bar__nav-elements">
           <li>
             <a
-              class="nav-bar__nav-elements--item--active"
+              class="nav-bar__nav-elements--item"
               href="../index.html"
               alt="home page"
               >Home</a
@@ -52,51 +52,24 @@
         </ul>
       </nav>
     </header>
+
     <body>
-      <section class="hero">
-        <div class="hero__text">
-          <h1>Traveling Comes With Endless Discoveries</h1>
-          <p>
-            Don't let your dreams be just dreams. Experience the world by
-            booking a vacation with us now.
-          </p>
-          <button onclick="window.location.href='./pages/booking.html';">
-            Get Started
-          </button>
-        </div>
-        <div class="herro__image">
-          <img
-            src="./assets/images/hero.png"
-            alt="plane flying around the globe"
-          />
-        </div>
-      </section>
-
-      <section class="recommendations">
-        <h1 class="recommendations__heading">Recommendations</h1>
-
-        <div class="recommendations__destinations">
-          <article class="recommendations__destinations--hawaii">
-            <p>Hawaii</p>
-            <a href="pages/hawaii.html">
-              <img src="./assets/images/hawaii.jpg" alt="hawaii" />
-            </a>
-          </article>
-          <article class="recommendations__destinations--iceland">
-            <p>Iceland</p>
-            <a href="pages/iceland.html">
-              <img src="./assets/images/iceland.jpg" alt="iceland" />
-            </a>
-          </article>
-          <article class="recommendations__destinations--greece">
-            <p>Greece</p>
-            <a href="pages/greece.html">
-              <img src="./assets/images/greece.jpg" alt="greece" />
-            </a>
-          </article>
-        </div>
-      </section>
+      <form class="booking-form">
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname" />
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname" />
+        <label for="phone-num">Phone number</label>
+        <input type="text" id="phone-num" name="phone-num" />
+        <label for="e-mail">e-mail:</label>
+        <input type="e-mail" id="e-mail" name="e-mail" />
+        <label for="destination">Destination:</label>
+        <input type="text" id="destination" name="destination" />
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" cols="50"></textarea>
+      </form>
     </body>
+
     <footer class="footer">
       <section class="footer__item contact">
         <h2>Contact</h2>

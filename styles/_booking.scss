@@ -1,0 +1,16 @@
+@use "abstracts" as *;
+
+.booking-form {
+  @include set-standard-padding(5vh, 20vw);
+  display: flex;
+  flex-direction: column;
+  input {
+    margin-bottom: 2rem;
+    height: 2rem;
+  }
+
+  label {
+    color: $color-h3-and-button-bg;
+    font-weight: 600;
+  }
+}

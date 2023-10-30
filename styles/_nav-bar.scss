@@ -26,6 +26,11 @@ $color-word-mark: #335576;
     &--item {
       margin-left: 1rem;
       text-decoration: none;
+      &:hover {
+        background-color: $color-h3-and-button-bg;
+        color: white;
+        border-radius: 5px;
+      }
       &--active,
       a {
         padding: auto 0;

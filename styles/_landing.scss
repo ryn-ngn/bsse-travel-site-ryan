@@ -7,6 +7,12 @@ $color-hero-background: #fefaf5;
   @include flex-on-spacing(row, space-between);
   // set-standard-padding has default left-right value of 5 rem
   @include set-standard-padding(4rem);
+  // @media (min-width: 600px) and (max-width: 900px) {
+  //   @include set-standard-padding(2rem, 2rem);
+  // }
+  @include tablet-media-query {
+    @include set-standard-padding(4rem, 2rem);
+  }
   &__text {
     width: 45%;
     .recommendations__heading,
@@ -19,6 +25,9 @@ $color-hero-background: #fefaf5;
     height: 40vh;
     &:hover {
       animation: tilt-shaking 1.5s linear infinite;
+    }
+    @include tablet-media-query {
+      height: 30vh;
     }
   }
 

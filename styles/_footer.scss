@@ -13,6 +13,7 @@ $color-footer-background: #fefaf5;
     margin-top: 0;
     color: $color-h3-and-button-bg;
   }
+
   .hours {
     position: relative;
     top: 0;
@@ -30,6 +31,13 @@ $color-footer-background: #fefaf5;
       @include add-scale-animation;
     }
     &__icon-ctn a:nth-child(2) img {
+      margin: 0 1rem;
+    }
+  }
+
+  @include tablet-media-query {
+    padding: 2rem 0;
+    &__item {
       margin: 0 1rem;
     }
   }

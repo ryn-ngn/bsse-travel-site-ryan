@@ -6,6 +6,7 @@ $color-word-mark: #335576;
 .body-header {
   position: sticky;
   top: 0;
+  z-index: 1;
 }
 .nav-bar {
   background-color: $color-nav-bar;

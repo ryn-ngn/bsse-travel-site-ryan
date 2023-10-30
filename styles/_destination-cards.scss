@@ -8,17 +8,25 @@
     @include set-destination-card(hawaii, $image-link-hawaii);
     @include set-destination-card(greece, $image-link-greece);
     @include set-destination-card(iceland, $image-link-iceland);
-
+    @include tablet-media-query {
+      flex-wrap: wrap;
+    }
     &--hawaii {
       @include add-scale-animation;
     }
 
     &--greece {
       @include add-scale-animation;
+      @include tablet-media-query {
+        padding-top: 1.5rem;
+      }
     }
 
     &--iceland {
       @include add-scale-animation;
+      @include tablet-media-query {
+        padding-top: 1.5rem;
+      }
     }
   }
   margin: 1rem 0 4rem 0;
